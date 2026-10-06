@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LuxeJewels</title>
+</head>
+<body>
+    <!-- ==================== HEADER / NAVBAR ==================== -->
+    <header class="header">
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">✨ LuxeJewels</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Right Side: Theme Toggle + Hamburger -->
+            <div class="nav-right">
+                <!-- Dark / Light Mode Toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+
+                <!-- Hamburger Menu (for mobile) -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!-- ==================== HERO SECTION ==================== -->
+<section class="hero" id="home">
+    <div class="hero-container">
+        
+        <!-- Left Content -->
+        <div class="hero-content">
+            <span class="hero-badge">New Collection 2025</span>
+            
+            <h1 class="hero-title">
+                Discover Timeless <span>Elegance</span>
+            </h1>
+            
+            <p class="hero-description">
+                Handcrafted jewelry that tells your unique story. 
+                Explore our exclusive collection of rings, necklaces, earrings & bracelets.
+            </p>
+            
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Shop Collection</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>500+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat">
+                    <h3>100%</h3>
+                    <p>Handmade</p>
+                </div>
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p>Unique Designs</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="hero-image">
+            <img src="https://i.pinimg.com/736x/30/85/44/308544ba5b67966c918d4edaf520782c.jpg" 
+                 alt="Luxury Jewelry">
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================== PRODUCTS SECTION ==================== -->
+<section class="products" id="products">
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="section-header">
+            <h2>Our Collection</h2>
+            <p>Handcrafted jewelry for every occasion</p>
+        </div>
+
+        <!-- Search & Filter -->
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rings">Rings</button>
+                <button class="filter-btn" data-filter="necklaces">Necklaces</button>
+                <button class="filter-btn" data-filter="earrings">Earrings</button>
+                <button class="filter-btn" data-filter="bracelets">Bracelets</button>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+
+            <!-- Product Card -->
+            <div class="product-card" data-category="rings">
+                <div class="product-img">
+                    <img src="https://i.pinimg.com/736x/a3/21/07/a321075a28d98890b3d9bdc3ab6feee6.jpg" alt="Gold Ring">
+                    <button class="wishlist-btn">♡</button>
+                </div>
+                <div class="product-content">
+                    <span class="category">Rings</span>
+                    <h3>Elegant Gold Ring</h3>
+                    <p class="price">$129.00</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="necklaces">
+                <div class="product-img">
+                    <img src="https://i.pinimg.com/736x/92/e1/5a/92e15a4ddaa04507011bfe5be4b8b206.jpg" alt="Pearl Necklace">
+                    <button class="wishlist-btn">♡</button>
+                </div>
+                <div class="product-content">
+                    <span class="category">Necklaces</span>
+                    <h3>Pearl Necklace</h3>
+                    <p class="price">$189.00</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="earrings">
+                <div class="product-img">
+                    <img src="https://i.pinimg.com/736x/7e/ef/ba/7eefba2a099518a3137440a3715908ac.jpg" alt="Diamond Earrings">
+                    <button class="wishlist-btn">♡</button>
+                </div>
+                <div class="product-content">
+                    <span class="category">Earrings</span>
+                    <h3>Diamond Studs</h3>
+                    <p class="price">$99.00</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="bracelets">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500&h=500&fit=crop" alt="Gold Bracelet">
+                    <button class="wishlist-btn">♡</button>
+                </div>
+                <div class="product-content">
+                    <span class="category">Bracelets</span>
+                    <h3>Gold Chain Bracelet</h3>
+                    <p class="price">$149.00</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="rings">
+                <div class="product-img">
+                    <img src="https://i.pinimg.com/1200x/0f/25/27/0f2527ed2266f36ff5f52c45e053a094.jpg" alt="Rose Gold Ring">
+                    <button class="wishlist-btn">♡</button>
+                </div>
+                <div class="product-content">
+                    <span class="category">Rings</span>
+                    <h3>Rose Gold Ring</h3>
+                    <p class="price">$159.00</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="necklaces">
+                <div class="product-img">
+                    <img src="https://i.pinimg.com/736x/28/9c/f4/289cf4324ce66b4042fe1ea815d08250.jpg" alt="Silver Necklace">
+                    <button class="wishlist-btn">♡</button>
+                </div>
+                <div class="product-content">
+                    <span class="category">Necklaces</span>
+                    <h3>Silver Pendant</h3>
+                    <p class="price">$79.00</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="earrings">
+                <div class="product-img">
+                    <img src="https://i.pinimg.com/736x/5c/83/54/5c8354670d9fe7abcb9ceb0c3038d257.jpg" alt="Hoop Earrings">
+                    <button class="wishlist-btn">♡</button>
+                </div>
+                <div class="product-content">
+                    <span class="category">Earrings</span>
+                    <h3>Gold Hoops</h3>
+                    <p class="price">$89.00</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="bracelets">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=500&h=500&fit=crop" alt="Charm Bracelet">
+                    <button class="wishlist-btn">♡</button>
+                </div>
+                <div class="product-content">
+                    <span class="category">Bracelets</span>
+                    <h3>Charm Bracelet</h3>
+                    <p class="price">$119.00</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ABOUT SECTION ==================== -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-content">
+            
+            <!-- Left Image -->
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&h=700&fit=crop" alt="About LuxeJewels">
+            </div>
+
+            <!-- Right Text -->
+            <div class="about-text">
+                <span class="about-badge">Our Story</span>
+                <h2>Crafted with Love & Passion</h2>
+                <p>
+                    At LuxeJewels, we believe jewelry is more than just an accessory — 
+                    it's a reflection of your unique story. Every piece is carefully 
+                    handcrafted by skilled artisans using the finest materials.
+                </p>
+                <p>
+                    From timeless classics to modern designs, our collection is made 
+                    to celebrate life's special moments and everyday elegance.
+                </p>
+
+                <div class="about-features">
+                    <div class="feature">
+                        <h4>100% Handmade</h4>
+                        <p>Crafted by expert artisans</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Premium Quality</h4>
+                        <p>Only the finest materials</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Unique Designs</h4>
+                        <p>Exclusive & original pieces</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CONTACT SECTION ==================== -->
+<section class="contact" id="contact">
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>We would love to hear from you</p>
+        </div>
+
+        <div class="contact-content">
+
+            <!-- Left Info -->
+            <div class="contact-info">
+                <div class="info-item">
+                    <h4>📍 Address</h4>
+                    <p>123 Luxury Street, Karachi, Pakistan</p>
+                </div>
+
+                <div class="info-item">
+                    <h4>📧 Email</h4>
+                    <p>support@luxejewels.com</p>
+                </div>
+
+                <div class="info-item">
+                    <h4>📞 Phone</h4>
+                    <p>+92 300 1234567</p>
+                </div>
+
+                <div class="info-item">
+                    <h4>⏰ Working Hours</h4>
+                    <p>Mon - Sat: 10AM - 8PM</p>
+                </div>
+            </div>
+
+            <!-- Right Form -->
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Subject">
+                </div>
+
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+                <h3>✨ LuxeJewels</h3>
+                <p>Timeless elegance, handcrafted with love. Discover jewelry that tells your story.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Categories -->
+            <div class="footer-links">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#products">Rings</a></li>
+                    <li><a href="#products">Necklaces</a></li>
+                    <li><a href="#products">Earrings</a></li>
+                    <li><a href="#products">Bracelets</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>📧 support@luxejewels.com</p>
+                <p>📞 +92 300 1234567</p>
+                <p>📍 Karachi, Pakistan</p>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <p>© 2025 LuxeJewels. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
